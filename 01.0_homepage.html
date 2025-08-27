@@ -199,33 +199,20 @@
                     href="{$default['settings']['strTwitter']}"
                   >
                     <svg
-                      width="24px"
-                      height="24px"
+                      width="24"
+                      height="24"
                       viewBox="0 0 24 24"
-                      version="1.1"
                       xmlns="http://www.w3.org/2000/svg"
-                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      aria-hidden="true"
                     >
-                      <g
-                        id="1.-Design"
-                        stroke="none"
-                        stroke-width="1"
-                        fill="none"
-                        fill-rule="evenodd"
-                      >
-                        <g
-                          id="Profil-hráče"
-                          transform="translate(-1626.000000, -19.000000)"
-                          fill="#FFF"
-                          fill-rule="nonzero"
-                        >
-                          <g id="twitter" transform="translate(1626.000000, 19.000000)">
-                            <path
-                              d="M12,0 C5.3735962,0 0,5.3735962 0,12 C0,18.6264038 5.3735962,24 12,24 C18.6264038,24 24,18.6264038 24,12 C24,5.3735962 18.6264038,0 12,0 Z M17.479065,9.35632322 C17.484375,9.47442628 17.4869385,9.59307863 17.4869385,9.71228025 C17.4869385,13.3518677 14.7165527,17.5488281 9.65020753,17.5490112 L9.65039062,17.5490112 L9.65020753,17.5490112 C8.09472656,17.5490112 6.64727784,17.0930786 5.42834475,16.3117676 C5.64385988,16.3372193 5.8632202,16.3498535 6.08532713,16.3498535 C7.37585447,16.3498535 8.56347656,15.909668 9.50628661,15.1708374 C8.30053711,15.1484985 7.28393555,14.3521729 6.93310547,13.2577515 C7.10101317,13.289978 7.27368164,13.3075561 7.45074464,13.3075561 C7.70214844,13.3075561 7.94567869,13.2736816 8.177124,13.2105103 C6.91680909,12.9581909 5.96740725,11.8443604 5.96740725,10.5106201 C5.96740725,10.498169 5.96740725,10.4869995 5.96777344,10.4754638 C6.33892823,10.6818237 6.76336669,10.8059693 7.21527098,10.8198853 C6.47570803,10.326416 5.989563,9.48284911 5.989563,8.52722166 C5.989563,8.02258303 6.12597656,7.54980469 6.36254883,7.14276122 C7.72082522,8.80938722 9.75073242,9.90545653 12.039917,10.0206299 C11.9926758,9.81884766 11.9683228,9.60864258 11.9683228,9.39257813 C11.9683228,7.87207031 13.2019043,6.63848878 14.7229614,6.63848878 C15.5152588,6.63848878 16.2308349,6.97338867 16.7334595,7.50878906 C17.3609619,7.38500977 17.9501953,7.15576172 18.4824829,6.84027098 C18.2764893,7.4831543 17.8399658,8.02258303 17.2712402,8.36370848 C17.8284302,8.29705809 18.359436,8.14929197 18.8529052,7.92993164 C18.484314,8.48236083 18.0168457,8.96759034 17.479065,9.35632322 Z"
-                              id="Shape"
-                            ></path>
-                          </g>
-                        </g>
+                      <!-- фон-круг: меняется через color / currentColor -->
+                      <circle cx="12" cy="12" r="12" fill="#fff" />
+                      <!-- логотип X, масштабирован из 640×640 в 24×24 -->
+                      <g transform="scale(0.0375)">
+                        <path
+                          fill="#651911"
+                          d="M453.2 112L523.8 112L369.6 288.2L551 528L409 528L297.7 382.6L170.5 528L99.8 528L264.7 339.5L90.8 112L236.4 112L336.9 244.9L453.2 112zM428.4 485.8L467.5 485.8L215.1 152L173.1 152L428.4 485.8z"
+                        />
                       </g>
                     </svg>
                   </a>
@@ -274,148 +261,204 @@
         </div>
       </header>
       <main class="main" aria-label="Hlavní obsah">
-        <div class="hp-wrapper">
-          <section class="c-topstory-section">
-            <div class="col-12">
-              <div class="c-topstory-section__inner c-topstory-section--three-cols">
-                <div class="c-topstory-section__item">
-                  <a class="c-topstory-section__img" href="#">
-                    <img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
-                    <div class="c-topstory-section__info">
-                      <div class="c-topstory-section__info-box">
-                        <div class="label">24. 12. 2021</div>
-                        <h2 class="h2">
-                          Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
-                        </h2>
-                        <span class="date"> 7. srpna 2025 </span>
-                      </div>
-                    </div>
-                  </a>
+        <section class="c-topstory-section">
+          <div class="c-topstory-section__inner c-topstory-section--three-cols mb-6">
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek2.jpeg" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">24. 12. 2021</div>
+                    <h2 class="h2">
+                      Mládežnický reprezentant Filip Kábrt posiluje hradecké Sokoly!
+                    </h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
                 </div>
-                <div class="c-topstory-section__item">
-                  <a class="c-topstory-section__img" href="#">
-                    <img src="images/content/clanek2.jpeg" loading="lazy" alt="" />
-                    <div class="c-topstory-section__info">
-                      <div class="c-topstory-section__info-box">
-                        <div class="label">16. 12. 2021</div>
-                        <h2 class="h2">Zhodnocení uplynulé sezóny očima Petera Sedmáka</h2>
-                        <span class="date"> 7. srpna 2025 </span>
-                      </div>
-                    </div>
-                  </a>
+              </a>
+            </div>
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek2.jpeg" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">16. 12. 2021</div>
+                    <h2 class="h2">Zhodnocení uplynulé sezóny očima Petera Sedmáka</h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
                 </div>
-                <div class="c-topstory-section__item">
-                  <a class="c-topstory-section__img" href="#">
-                    <img src="images/content/clanek.jpeg" loading="lazy" alt="" />
-                    <div class="c-topstory-section__info">
-                      <div class="c-topstory-section__info-box">
-                        <div class="label">16. 12. 2021</div>
-                        <h2 class="h2">Série předkola play off vyrovnána na 1:1</h2>
-                        <span class="date"> 7. srpna 2025 </span>
-                      </div>
-                    </div>
-                  </a>
+              </a>
+            </div>
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek.jpeg" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">16. 12. 2021</div>
+                    <h2 class="h2">Série předkola play off vyrovnána na 1:1</h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
                 </div>
+              </a>
+            </div>
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">16. 12. 2021</div>
+                    <h2 class="h2">Série předkola play off vyrovnána na 1:1</h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">16. 12. 2021</div>
+                    <h2 class="h2">Série předkola play off vyrovnána na 1:1</h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="c-topstory-section__item">
+              <a class="c-topstory-section__img" href="#">
+                <img src="images/content/clanek.jpeg" loading="lazy" alt="" />
+                <div class="c-topstory-section__info">
+                  <div class="c-topstory-section__info-box">
+                    <div class="label">16. 12. 2021</div>
+                    <h2 class="h2">Série předkola play off vyrovnána na 1:1</h2>
+                    <span class="date"> 7. srpna 2025 </span>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="text-center">
+            <a href="#" class="btn">Další články</a>
+          </div>
+        </section>
+        <div class="mt-10">
+          <div class="container">
+            <div class="row g-4 justify-content-center">
+              <div class="col-xl-4 col-lg-6">
+                <a href="#" class="d-block" target="_blank">
+                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
+                </a>
+              </div>
+              <div class="col-xl-4 col-lg-6">
+                <a href="#" class="d-block" target="_blank">
+                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
+                </a>
+              </div>
+              <div class="col-xl-4 col-lg-6">
+                <a href="#" class="d-block" target="_blank">
+                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
+                </a>
               </div>
             </div>
-          </section>
-          <section class="c-hp-matches-section">
-            <div class="container">
-              <div class="row g-4">
-                <div class="col-xl-4">
-                  <div class="c-hp-matches-section__item">
-                    <p>14. kolo, neděle 4. 4. 2022</p>
-                    <div class="row justify-content-center">
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/logo.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-12">
-                        <div class="c-hp-matches-section__item-info">
-                          <h3 class="h3 text-primary">Královští sokoli</h3>
-                          <h3 class="h3">Bk pardubice</h3>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/pard.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-hp-matches-section__item-result">14:30 hod.</div>
-                    <ul class="c-hp-matches-section__item-links">
-                      <li>
-                        <a class="btn" href="#">Reportáž</a>
-                      </li>
-                      <li>
-                        <a class="btn" href="#">vstupenky</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-xl-4">
-                  <div class="c-hp-matches-section__item">
-                    <p>14. kolo, neděle 4. 4. 2022</p>
-                    <div class="row justify-content-center">
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/pard.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-12">
-                        <div class="c-hp-matches-section__item-info">
-                          <h3 class="h3">Bk pardubice</h3>
-                          <h3 class="h3 text-primary">Královští sokoli</h3>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/logo.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-hp-matches-section__item-result lose">82:76</div>
-                    <ul class="c-hp-matches-section__item-links">
-                      <li>
-                        <a class="btn" href="#">Reportáž</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="col-xl-4">
-                  <div class="c-hp-matches-section__item">
-                    <p>14. kolo, neděle 4. 4. 2022</p>
-                    <div class="row justify-content-center">
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/pard.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-12">
-                        <div class="c-hp-matches-section__item-info">
-                          <h3 class="h3">Bk pardubice</h3>
-                          <h3 class="h3 text-primary">Královští sokoli</h3>
-                        </div>
-                      </div>
-                      <div class="col-sm-4 col-auto">
-                        <div class="c-hp-matches-section__item-logo">
-                          <img src="images/content/logo.png" loading="lazy" alt="logo" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="c-hp-matches-section__item-result lose">82:76</div>
-                    <ul class="c-hp-matches-section__item-links">
-                      <li>
-                        <a class="btn" href="#">Reportáž</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          </div>
         </div>
+        <section class="c-hp-matches-section">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-xl-4">
+                <div class="c-hp-matches-section__item">
+                  <p>14. kolo, neděle 4. 4. 2022</p>
+                  <div class="row justify-content-center">
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/logo.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                      <div class="c-hp-matches-section__item-info">
+                        <h3 class="h3 text-primary">Královští sokoli</h3>
+                        <h3 class="h3">Bk pardubice</h3>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/pard.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-hp-matches-section__item-result">14:30 hod.</div>
+                  <ul class="c-hp-matches-section__item-links">
+                    <li>
+                      <a class="btn" href="#">Reportáž</a>
+                    </li>
+                    <li>
+                      <a class="btn" href="#">vstupenky</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="c-hp-matches-section__item">
+                  <p>14. kolo, neděle 4. 4. 2022</p>
+                  <div class="row justify-content-center">
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/pard.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                      <div class="c-hp-matches-section__item-info">
+                        <h3 class="h3">Bk pardubice</h3>
+                        <h3 class="h3 text-primary">Královští sokoli</h3>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/logo.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-hp-matches-section__item-result lose">82:76</div>
+                  <ul class="c-hp-matches-section__item-links">
+                    <li>
+                      <a class="btn" href="#">Reportáž</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-xl-4">
+                <div class="c-hp-matches-section__item">
+                  <p>14. kolo, neděle 4. 4. 2022</p>
+                  <div class="row justify-content-center">
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/pard.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-12">
+                      <div class="c-hp-matches-section__item-info">
+                        <h3 class="h3">Bk pardubice</h3>
+                        <h3 class="h3 text-primary">Královští sokoli</h3>
+                      </div>
+                    </div>
+                    <div class="col-sm-4 col-auto">
+                      <div class="c-hp-matches-section__item-logo">
+                        <img src="images/content/logo.png" loading="lazy" alt="logo" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="c-hp-matches-section__item-result lose">82:76</div>
+                  <ul class="c-hp-matches-section__item-links">
+                    <li>
+                      <a class="btn" href="#">Reportáž</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         <div class="partners">
           <div class="container">
             <div class="row justify-content-center align-items-center partners-slider">
@@ -549,27 +592,7 @@
             <a href="#" class="btn">Další články</a>
           </div>
         </section>
-        <div class="mb-10">
-          <div class="container">
-            <div class="row g-4 justify-content-center">
-              <div class="col-xl-4 col-lg-6">
-                <a href="#" class="d-block" target="_blank">
-                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
-                </a>
-              </div>
-              <div class="col-xl-4 col-lg-6">
-                <a href="#" class="d-block" target="_blank">
-                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
-                </a>
-              </div>
-              <div class="col-xl-4 col-lg-6">
-                <a href="#" class="d-block" target="_blank">
-                  <img class="object-fit-cover w-100" src="https://placehold.co/550x300" alt="" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+
         <section class="hp-dashboard">
           <div class="container">
             <div class="row hp-dashboard__inner gy-10">
