@@ -1,0 +1,67 @@
+.d-block {
+    display: block !important;
+}
+
+.dropdown-item {
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    text-decoration: underline;
+}
+
+.c-table-section .o-content .table-responsive {
+    overflow-y: hidden;
+}
+
+.c-table-section .o-content table tbody .logo {
+    display: flex;
+    align-items: center;
+    width: 100% !important;
+    transform: translateY(1px);
+    white-space: nowrap;
+}
+
+.c-table-section .o-content table tbody .logo img {
+    height: 1.5rem;
+    width: 1.5rem;
+    object-fit: contain;
+    margin: 0;
+    margin-right: 0.5rem;
+}
+
+.youth-menu-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.youth-menu-links li {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.youth-menu-links li a {
+    display: block;
+    padding: 1rem ;
+    background-color: var(--menu-bg);
+    color: #fff;
+}
+
+.youth-menu-links li.active a {
+    background-color: var(--color-primary);
+}
+
+.youth-menu-links li::before {
+    display: none;
+}
+
+.footer::before {
+    top: -0.25rem;
+    background-image: url('/assets/images/bk-gapa-2025.png');
+}
+
+.hp-dashboard__table td img {
+    object-fit: contain;
+}
+
