@@ -3446,7 +3446,7 @@ th {
 .aside__menu li {
   margin-bottom: 1rem;
   padding-bottom: 1rem;
-  border-bottom: 0.0625rem solid var(--color-primary);
+  border-bottom: 0.0625rem solid #fe6600;
 }
 .aside__menu li:last-child {
   margin-bottom: 0;
@@ -3463,7 +3463,7 @@ th {
   text-decoration-color: inherit;
 }
 .aside__menu .active {
-  color: var(--color-primary);
+  color: #fe6600;
 }
 .footer {
   position: relative;
